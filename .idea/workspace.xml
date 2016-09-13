@@ -5,6 +5,7 @@
     <ignored path="Proyecto_Uno.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -398,12 +399,12 @@
       <created>1473791753483</created>
       <option name="number" value="Default" />
       <updated>1473791753483</updated>
-      <workItem from="1473791757042" duration="340000" />
+      <workItem from="1473791757042" duration="478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="340000" />
+    <option name="totallyTimeSpent" value="478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="800" height="553" extended-state="6" />
