@@ -105,6 +105,11 @@ public class venCalculadora extends javax.swing.JFrame {
         });
 
         jButton9.setText("=");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         jButton10.setText("-");
 
@@ -292,6 +297,31 @@ public class venCalculadora extends javax.swing.JFrame {
         this.jTextPane1.setText( TextoPantalla + jButton3.getText());
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    // boton borrar (del)
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+        limPantalla();
+        limValores();
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    /**** propiedades de la clase *****/
+    double  valor1, valor2, resultado;
+    String  operacion;
+    
+    /***** metodos basicos para las funcionalidades de la calculadora ****/
+    // borrar la pantalla
+    public void limPantalla (){
+        jTextPane1.setText("0");
+    }
+    
+    // limpiar los valores internos 
+    public void limValores  (){
+        this.operacion = null;
+        this.valor1 = 0 ;
+        this.valor2 = 0;
+        this.resultado = 0;
+    }
+    
     /**
      * @param args the command line arguments
      */
