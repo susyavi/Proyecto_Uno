@@ -112,12 +112,32 @@ public class venCalculadora extends javax.swing.JFrame {
         });
 
         jButton10.setText("-");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
         jButton11.setText("/");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
 
-        jButton12.setText("x");
+        jButton12.setText("del");
+        jButton12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton12ActionPerformed(evt);
+            }
+        });
 
         jButton14.setText("+");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
 
         jButton16.setText("7");
         jButton16.addActionListener(new java.awt.event.ActionListener() {
@@ -280,7 +300,7 @@ public class venCalculadora extends javax.swing.JFrame {
         // TODO add your handling code here:
         // TODO add your handling code here:
         String TextoPantalla = jTextPane1.getText();
-        this.jTextPane1.setText( TextoPantalla + jButton8.getText());
+        this.jTextPane1.setText( TextoPantalla + jButton18.getText());
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
@@ -297,16 +317,54 @@ public class venCalculadora extends javax.swing.JFrame {
         this.jTextPane1.setText( TextoPantalla + jButton3.getText());
     }//GEN-LAST:event_jButton3ActionPerformed
 
-    // boton borrar (del)
+    
+    // boton de igual 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
+        // decidir que operacion se debe ejecutar a partir del signo
+        this.extValores(this.operacion);
+        switch(operacion){
+            
+            case "+": jTextPane1.setText(operacion);
+            case "-": jTextPane1.setText(operacion);
+            case "/": jTextPane1.setText(operacion);
+            
+            /*
+            case "+":  jTextPane1.setText( valor1 + " " + operacion + " " + valor2 );  break;
+            case "-":  jTextPane1.setText( valor1 + " " + operacion + " " + valor2 );  break;
+            case "/":  jTextPane1.setText( valor1 + " " + operacion + " " + valor2 );  break;
+            */
+            
+        }
+        
         limPantalla();
         limValores();
     }//GEN-LAST:event_jButton9ActionPerformed
 
+    // boton borrar (del)
+    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+        // TODO add your handling code here:
+        limPantalla();
+        limValores();
+    }//GEN-LAST:event_jButton12ActionPerformed
+
+    // boton de divicion 
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        extValores(jButton11.getText());
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    // boton de resta
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+        extValores(jButton10.getText());
+    }//GEN-LAST:event_jButton10ActionPerformed
+
+    // boton de suma
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        extValores( jButton14.getText() );
+    }//GEN-LAST:event_jButton14ActionPerformed
+
     /**** propiedades de la clase *****/
     double  valor1, valor2, resultado;
-    String  operacion;
+    String  operacion = null ;
     
     /***** metodos basicos para las funcionalidades de la calculadora ****/
     // borrar la pantalla
@@ -320,6 +378,42 @@ public class venCalculadora extends javax.swing.JFrame {
         this.valor1 = 0 ;
         this.valor2 = 0;
         this.resultado = 0;
+    }
+    
+    // conseguir valores de la pantalla 
+    public void extValores  ( String textoOperacion ){
+        /* 
+          este metodo se utilizara al precionar los botones de operaciones, consigue el valor numerico de la 
+          pantalla (ya sea negativo o positivo) asigna este valor a las propiedades de la clase valor1, valor2
+          consigue una cadena que representa la operacion que se ha de realizar 
+        */
+        
+        // verificar si se indica una cantidad negativa ( -134 ) o se trata de una operacion ( 124 -34 )
+        // si valor 1 esta vacio
+        
+        
+        if ( valor1 == 0 && operacion == null ){
+            this.valor1 = Double.parseDouble( jTextPane1.getText() );
+            System.out.println(valor1);
+            //System.out.println("extrallendo el signo");
+            
+            // conseguir el operador 
+            operacion = textoOperacion;
+            System.out.println(operacion);
+            limPantalla();
+          
+        }
+        // si valor1 no esta vacio fue capturado el primer numero, se debe capturar el operador 
+        else
+        {
+           // capturar valor 2
+           if( valor1 != 0 && operacion != null ){
+                
+                this.valor2 = Double.parseDouble( jTextPane1.getText() );
+                System.out.println(valor2);
+                    
+            }
+        }
     }
     
     /**
