@@ -5,6 +5,8 @@
  */
 package venCalculadora;
 
+import javax.swing.JEditorPane;
+
 /**
  *
  * @author frodo
@@ -387,32 +389,37 @@ public class venCalculadora extends javax.swing.JFrame {
           pantalla (ya sea negativo o positivo) asigna este valor a las propiedades de la clase valor1, valor2
           consigue una cadena que representa la operacion que se ha de realizar 
         */
+        String carTexto = jTextPane1.getText();
         
-        // verificar si se indica una cantidad negativa ( -134 ) o se trata de una operacion ( 124 -34 )
-        // si valor 1 esta vacio
-        
-        
-        if ( valor1 == 0 && operacion == null ){
-            this.valor1 = Double.parseDouble( jTextPane1.getText() );
-            System.out.println(valor1);
-            //System.out.println("extrallendo el signo");
+        /// verificar si la pantalla esta vacia, tiene 0 un numero 
+        if ( jTextPane1.getText().length() == 0 || Double.parseDouble( jTextPane1.getText() ) == 0  ){
             
-            // conseguir el operador 
-            operacion = textoOperacion;
-            System.out.println(operacion);
-            limPantalla();
-          
+            System.out.println(" la caja esta vacia ");
+            jTextPane1.setText(textoOperacion);
         }
-        // si valor1 no esta vacio fue capturado el primer numero, se debe capturar el operador 
-        else
-        {
-           // capturar valor 2
-           if( valor1 != 0 && operacion != null ){
-                
-                this.valor2 = Double.parseDouble( jTextPane1.getText() );
-                System.out.println(valor2);
-                    
+        else {
+            // verificar si se indica una cantidad negativa ( -134 ) o se trata de una operacion ( 124 -34 )
+            // si valor 1 esta vacio
+       
+            if ( valor1 == 0 && operacion == null ){
+                this.valor1 = Double.parseDouble( jTextPane1.getText() );
+                System.out.println(valor1);
+                //System.out.println("extrallendo el signo");
+            
+                // conseguir el operador 
+                operacion = textoOperacion;
+                System.out.println(operacion);
+                limPantalla();
             }
+            // si valor1 no esta vacio fue capturado el primer numero, se debe capturar el operador 
+            else
+            {
+                // capturar valor 2
+                if( valor1 != 0 && operacion != null ){                
+                    this.valor2 = Double.parseDouble( jTextPane1.getText() );
+                    System.out.println(valor2);    
+                }
+            }    
         }
     }
     
