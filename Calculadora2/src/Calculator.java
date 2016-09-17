@@ -105,6 +105,11 @@ public class Calculator extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         setResizable(false);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowActivated(java.awt.event.WindowEvent evt) {
+                formWindowActivated(evt);
+            }
+        });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         basica.setBackground(new java.awt.Color(23, 23, 23));
@@ -983,10 +988,15 @@ public class Calculator extends javax.swing.JFrame {
         jButton60.setBackground(new java.awt.Color(23, 23, 23));
         jButton60.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
         jButton60.setForeground(new java.awt.Color(204, 204, 204));
-        jButton60.setText(" ");
+        jButton60.setText("Log");
         jButton60.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jButton60.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton60.setFocusable(false);
+        jButton60.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton60ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout cientificaLayout = new javax.swing.GroupLayout(cientifica);
         cientifica.setLayout(cientificaLayout);
@@ -1477,6 +1487,7 @@ public class Calculator extends javax.swing.JFrame {
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
         // TODO add your handling code here:
+        extValores( this.operacion);        
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
@@ -1703,6 +1714,7 @@ public class Calculator extends javax.swing.JFrame {
 
     private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
         // TODO add your handling code here:
+        this.extValores(jButton13.getText() );
       
     }//GEN-LAST:event_jButton13ActionPerformed
 
@@ -1710,6 +1722,17 @@ public class Calculator extends javax.swing.JFrame {
         // TODO add your handling code here:
       
     }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60ActionPerformed
+        // TODO add your handling code here:
+        extValor(jButton60.getText());
+    }//GEN-LAST:event_jButton60ActionPerformed
+
+    private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
+        // TODO add your handling code here:
+        jTextField1.setText("0.0");
+        jTextField2.setText("0.0");
+    }//GEN-LAST:event_formWindowActivated
 
     /************************************ variables de la clase ************************************************************/
     /***********************************************************************************************************************/
@@ -1724,7 +1747,7 @@ public class Calculator extends javax.swing.JFrame {
     // borar la pantalla de la calc.
     public void borrarPantalla(){
         jTextField1.setText("0.0");
-        jTextField1.setText("0.0");
+        jTextField2.setText("0.0");
         this.borrarValores();
     }
     
@@ -1737,6 +1760,13 @@ public class Calculator extends javax.swing.JFrame {
     }
     
     // conseguir valores de la pantalla 
+    /********* este metodo debe usarse solo para las funciones que requieran de 2 valores ejemplo
+     *      
+     *      23 + 3 ; 334 -2 ; valor1 + valor 2
+     *      
+     * el metodo extrae los valores de la caja de texto y los guarda en las propiedades valor1 y valor 2
+     * tambien extrae el operador de la operacion solicitada y lo guarda en la propiedad operacion
+     */
     public void extValores  ( String textoOperacion ){
         /* 
           este metodo se utilizara al precionar los botones de operaciones, consigue el valor numerico de la 
@@ -1753,7 +1783,7 @@ public class Calculator extends javax.swing.JFrame {
         
         try{
             /// verificar si la pantalla esta vacia, tiene 0 un numero 
-        if ( jTextField1.getText().length() == 0 || ( Double.parseDouble( txt.getText() ) == 0 ) ){           
+        if ( txt.getText().length() == 0 || ( Double.parseDouble( txt.getText() ) == 0 ) ){           
             if( textoOperacion == "-" || textoOperacion == "+"){
                 System.out.println(" la caja esta vacia ");
                 txt.setText(textoOperacion);
@@ -1790,6 +1820,34 @@ public class Calculator extends javax.swing.JFrame {
             txt.setText("Error!!!");
         }
   
+    }
+    
+    /********* este metodo debe usarse solo para las funciones que requieran de un solo parametro
+     *      
+     *      sen x; tan y ; etc = funcion (valor1)
+     *      
+     * el metodo extrae los valores de la caja de texto y los guarda en las propiedades valor1 
+     * tambien extrae el operador de la operacion solicitada y lo guarda en la propiedad operacion
+     */
+    public void extValor    ( String textoOperacion ){
+        JTextField txt = new JTextField();
+        
+        // verificar cual caja de texto esta siendo usada 
+        if( basica.isVisible() )
+            txt = jTextField1;
+        else
+            txt = jTextField2;
+        
+        System.out.println( basica.isVisible());
+        
+            /// verificar si la pantalla esta vacia, tiene 0 un numero 
+                if ( (txt.getText().compareTo("0.0") == 0) || txt.getText().compareTo("0") == 0 || txt.getText() == null ){     
+                    // meter la operacion 
+                    this.operacion = textoOperacion;
+                }    
+                else {
+                    txt.setText("Error!!!");
+                }
     }
     
     public static void main(String args[]) {
