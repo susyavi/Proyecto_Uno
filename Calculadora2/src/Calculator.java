@@ -492,13 +492,13 @@ public class Calculator extends javax.swing.JFrame {
             }
         });
         basica.add(jLabel2);
-        jLabel2.setBounds(115, 70, 92, 26);
+        jLabel2.setBounds(115, 70, 95, 24);
 
         jLabel6.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Básica");
         basica.add(jLabel6);
-        jLabel6.setBounds(25, 70, 63, 26);
+        jLabel6.setBounds(25, 70, 65, 24);
 
         jButton29.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         jButton29.setForeground(new java.awt.Color(153, 153, 153));
@@ -664,6 +664,11 @@ public class Calculator extends javax.swing.JFrame {
         jButton23.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jButton23.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton23.setFocusable(false);
+        jButton23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton23ActionPerformed(evt);
+            }
+        });
 
         jButton24.setBackground(new java.awt.Color(23, 23, 23));
         jButton24.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
@@ -672,6 +677,11 @@ public class Calculator extends javax.swing.JFrame {
         jButton24.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jButton24.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton24.setFocusable(false);
+        jButton24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton24ActionPerformed(evt);
+            }
+        });
 
         jButton26.setBackground(new java.awt.Color(23, 23, 23));
         jButton26.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
@@ -1321,24 +1331,35 @@ public class Calculator extends javax.swing.JFrame {
     // boton 0
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField1.getText();
-        this.jTextField1.setText( TextoPantalla + jButton2.getText());
+         conPantalla(jButton2);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        this.jTextField1.setText( jButton1.getText() );
+        
+        this.extValores( jButton1.getText() );
+        
+        //System.out.println( this.valor1 + " " + this.valor2 + " " + this.operacion );
+        
+        // decidir que operacion realizar segun la propiedad operacion
+        switch(operacion){
+            case "+" : /* funcion de suma */ break; 
+        }
+        
+        // desplegar Resultado en la pantalla 
+       JTextField txtGen = this.verPantalla();
+       txtGen.setText( this.valor1 + " " + this.valor2 + " " + this. operacion );
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField1.getText();
-        this.jTextField1.setText( TextoPantalla + jButton5.getText());
+         conPantalla(jButton5);
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         // TODO add your handling code here:
-        this.jTextField1.setText( jButton18.getText() );
+       
     }//GEN-LAST:event_jButton18ActionPerformed
 
     private void jLabel3MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MousePressed
@@ -1481,13 +1502,22 @@ public class Calculator extends javax.swing.JFrame {
 
     private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField2.getText();
-        this.jTextField2.setText( TextoPantalla + jButton20.getText() );
+         conPantalla(jButton20);
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        // TODO add your handling code here:
-        extValores( this.operacion);        
+        this.extValores( jButton1.getText() );
+        
+        //System.out.println( this.valor1 + " " + this.valor2 + " " + this.operacion );
+        
+        // decidir que operacion realizar segun la propiedad operacion
+        switch(operacion){
+            case "+" : /* funcion de suma */ break; 
+        }
+        
+        // desplegar Resultado en la pantalla 
+       JTextField txtGen = this.verPantalla();
+       txtGen.setText( this.valor1 + " " + this.valor2 + " " + this. operacion ); 
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
@@ -1500,8 +1530,7 @@ public class Calculator extends javax.swing.JFrame {
 
     private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField2.getText();
-        this.jTextField2.setText( TextoPantalla + jButton41.getText());
+         conPantalla(jButton41);
     }//GEN-LAST:event_jButton41ActionPerformed
 
     private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
@@ -1580,60 +1609,52 @@ public class Calculator extends javax.swing.JFrame {
     private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
         // TODO add your handling code here:
         borrarPantalla();
+        borrarValores();
     }//GEN-LAST:event_jButton47ActionPerformed
 
     private void jButton44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton44ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField2.getText();
-        this.jTextField2.setText( TextoPantalla + jButton44.getText());
+         conPantalla(jButton44);
     }//GEN-LAST:event_jButton44ActionPerformed
 
     private void jButton43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton43ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField2.getText();
-        this.jTextField2.setText( TextoPantalla + jButton43.getText());
+         conPantalla(jButton43);
     }//GEN-LAST:event_jButton43ActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField2.getText();
-        this.jTextField2.setText( TextoPantalla + jButton21.getText());
+         conPantalla(jButton21);
     }//GEN-LAST:event_jButton21ActionPerformed
 
     private void jButton45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton45ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField2.getText();
-        this.jTextField2.setText( TextoPantalla + jButton45.getText());
+         conPantalla(jButton45);
     }//GEN-LAST:event_jButton45ActionPerformed
 
     private void jButton40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton40ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField2.getText();
-        this.jTextField2.setText( TextoPantalla + jButton40.getText());
+         conPantalla(jButton40);
     }//GEN-LAST:event_jButton40ActionPerformed
 
     private void jButton42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton42ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField2.getText();
-        this.jTextField2.setText( TextoPantalla + jButton42.getText());
+         conPantalla(jButton42);
     }//GEN-LAST:event_jButton42ActionPerformed
 
     private void jButton46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton46ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField2.getText();
-        this.jTextField2.setText( TextoPantalla + jButton46.getText());
+         conPantalla(jButton46);
     }//GEN-LAST:event_jButton46ActionPerformed
 
     private void jButton39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton39ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField2.getText();
-        this.jTextField2.setText( TextoPantalla + jButton39.getText());
+         conPantalla(jButton39);
     }//GEN-LAST:event_jButton39ActionPerformed
 
     private void jButton37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton37ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField2.getText();
-        this.jTextField2.setText( TextoPantalla + jButton37.getText());
+         conPantalla(jButton37);
     }//GEN-LAST:event_jButton37ActionPerformed
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
@@ -1642,56 +1663,47 @@ public class Calculator extends javax.swing.JFrame {
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField1.getText();
-        this.jTextField1.setText( TextoPantalla + jButton8.getText());
+        conPantalla(jButton8);
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField1.getText();
-        this.jTextField1.setText( TextoPantalla + jButton9.getText());
+         conPantalla(jButton9);
     }//GEN-LAST:event_jButton9ActionPerformed
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
         // TODO add your handling code here:
-         String TextoPantalla = jTextField1.getText();
-        this.jTextField1.setText( TextoPantalla + jButton12.getText());
+          conPantalla(jButton12);
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField1.getText();
-        this.jTextField1.setText( TextoPantalla + jButton11.getText());
+         conPantalla(jButton11);
     }//GEN-LAST:event_jButton11ActionPerformed
 
     private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField1.getText();
-        this.jTextField1.setText( TextoPantalla + jButton10.getText());
+         conPantalla(jButton10);
     }//GEN-LAST:event_jButton10ActionPerformed
 
     private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField1.getText();
-        this.jTextField1.setText( TextoPantalla + jButton15.getText());
+         conPantalla(jButton15);
     }//GEN-LAST:event_jButton15ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField1.getText();
-        this.jTextField1.setText( TextoPantalla + jButton4.getText());
+         conPantalla(jButton4);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField1.getText();
-        this.jTextField1.setText( TextoPantalla + jButton6.getText());
+         conPantalla(jButton6);
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
-        String TextoPantalla = jTextField1.getText();
-        this.jTextField1.setText( TextoPantalla + jButton3.getText());
+         conPantalla(jButton3);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
@@ -1734,12 +1746,23 @@ public class Calculator extends javax.swing.JFrame {
         jTextField2.setText("0.0");
     }//GEN-LAST:event_formWindowActivated
 
+    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+        // TODO add your handling code here:
+        this.extValores(jButton23.getText() );
+    }//GEN-LAST:event_jButton23ActionPerformed
+
+    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+        // TODO add your handling code here:
+        this.extValores(jButton24.getText() );
+    }//GEN-LAST:event_jButton24ActionPerformed
+
     /************************************ variables de la clase ************************************************************/
     /***********************************************************************************************************************/
     double valor1;
     double valor2;
     double resultado;
     String operacion;
+    String menError = "Error";
     
      /************************************ metodos de la clase ************************************************************/
     /***********************************************************************************************************************/
@@ -1748,7 +1771,7 @@ public class Calculator extends javax.swing.JFrame {
     public void borrarPantalla(){
         jTextField1.setText("0.0");
         jTextField2.setText("0.0");
-        this.borrarValores();
+       // this.borrarValores();
     }
     
     //borrar las variables internas de la clase
@@ -1767,7 +1790,7 @@ public class Calculator extends javax.swing.JFrame {
      * el metodo extrae los valores de la caja de texto y los guarda en las propiedades valor1 y valor 2
      * tambien extrae el operador de la operacion solicitada y lo guarda en la propiedad operacion
      */
-    public void extValores  ( String textoOperacion ){
+    public void       extValores  ( String textoOperacion ){
         /* 
           este metodo se utilizara al precionar los botones de operaciones, consigue el valor numerico de la 
           pantalla (ya sea negativo o positivo) asigna este valor a las propiedades de la clase valor1, valor2
@@ -1783,9 +1806,9 @@ public class Calculator extends javax.swing.JFrame {
         
         try{
             /// verificar si la pantalla esta vacia, tiene 0 un numero 
-        if ( txt.getText().length() == 0 || ( Double.parseDouble( txt.getText() ) == 0 ) ){           
+        if ( ( Double.parseDouble( txt.getText() ) == 0 ) ){           
             if( textoOperacion == "-" || textoOperacion == "+"){
-                System.out.println(" la caja esta vacia ");
+               // System.out.println(" la caja esta vacia ");
                 txt.setText(textoOperacion);
             }            
          }    
@@ -1795,14 +1818,14 @@ public class Calculator extends javax.swing.JFrame {
        
             if ( valor1 == 0 && operacion == null  ){
                     this.valor1 = Double.parseDouble( txt.getText() );
-                    System.out.println(valor1);
+                    //System.out.println(valor1);
        
                 
                 //System.out.println("extrallendo el signo");
             
                 // conseguir el operador 
                 operacion = textoOperacion;
-                System.out.println(operacion);
+                //System.out.println(operacion);
                 borrarPantalla();
             }
             // si valor1 no esta vacio fue capturado el primer numero, se debe capturar el operador 
@@ -1811,13 +1834,13 @@ public class Calculator extends javax.swing.JFrame {
                 // capturar valor 2
                 if( valor1 != 0 && operacion != null && ( txt.getText() != "-" || txt.getText() != "+" )  ){                
                         this.valor2 = Double.parseDouble( txt.getText() );
-                        System.out.println(valor2);
+                        //System.out.println(valor2);
                 }
             }    
         }
         }
         catch( Exception exp ){
-            txt.setText("Error!!!");
+            txt.setText(this.menError);
         }
   
     }
@@ -1829,7 +1852,7 @@ public class Calculator extends javax.swing.JFrame {
      * el metodo extrae los valores de la caja de texto y los guarda en las propiedades valor1 
      * tambien extrae el operador de la operacion solicitada y lo guarda en la propiedad operacion
      */
-    public void extValor    ( String textoOperacion ){
+    public void       extValor    ( String textoOperacion ){
         JTextField txt = new JTextField();
         
         // verificar cual caja de texto esta siendo usada 
@@ -1846,8 +1869,51 @@ public class Calculator extends javax.swing.JFrame {
                     this.operacion = textoOperacion;
                 }    
                 else {
-                    txt.setText("Error!!!");
+                    txt.setText(this.menError);
                 }
+    }
+    
+    public JTextField verPantalla(){
+        
+        JTextField txtGen = new JTextField ();
+        
+        if( basica.isVisible() )
+            txtGen = jTextField1;
+        else
+            txtGen = jTextField2;
+        
+        return txtGen;
+    }
+    
+    /* este metodo verifica si la pantalla es 0.0 y debe concatenar el numero 91234 al escribir o 
+       debe reemplazar el 0 con un numero */
+    public void       conPantalla(JButton botonNumero ){
+        
+        // conseguir la caja de texto del context acutal 
+        JTextField txtGen = this.verPantalla();
+        
+        
+        try{
+            
+            // verificar si es 0 
+            if( Double.parseDouble(txtGen.getText()) == 0 ){
+                txtGen.setText( botonNumero.getText() );
+            }
+            else
+            {
+              String TextoPantalla = txtGen.getText();
+              txtGen.setText( TextoPantalla + botonNumero.getText());
+            }
+        }
+        catch( Exception ex ){
+             if( txtGen.getText().compareTo("+") == 0 || txtGen.getText().compareTo("-") == 0  ){
+                String TextoPantalla = txtGen.getText();
+                txtGen.setText( TextoPantalla + botonNumero.getText());
+            }
+        }
+        
+        
+        
     }
     
     public static void main(String args[]) {
