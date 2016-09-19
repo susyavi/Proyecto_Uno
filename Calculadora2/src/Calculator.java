@@ -1514,7 +1514,7 @@ public class Calculator extends javax.swing.JFrame {
         switch(operacion){
             case "+" : /* funcion de suma */ break; 
         }
-        // PRUEBA DE MODIFICACION ONLINE
+        
         // desplegar Resultado en la pantalla 
        JTextField txtGen = this.verPantalla();
        txtGen.setText( this.valor1 + " " + this.valor2 + " " + this. operacion ); 
