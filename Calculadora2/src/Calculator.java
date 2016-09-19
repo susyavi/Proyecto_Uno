@@ -17,7 +17,11 @@ public class Calculator extends javax.swing.JFrame {
         DecimalFormat objFormato = new DecimalFormat("#.#########");
 =======
         DecimalFormat objFormato=new DecimalFormat("#.#########");
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
         }
 
     @SuppressWarnings("unchecked")
@@ -55,7 +59,11 @@ public class Calculator extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jButton29 = new javax.swing.JButton();
         jButton34 = new javax.swing.JButton();
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
         cientifica = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
         jButton57 = new javax.swing.JButton();
@@ -130,7 +138,11 @@ public class Calculator extends javax.swing.JFrame {
         jButton58 = new javax.swing.JButton();
         jButton59 = new javax.swing.JButton();
         jButton60 = new javax.swing.JButton();
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
         menu = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jButton62 = new javax.swing.JButton();
@@ -2282,7 +2294,11 @@ public class Calculator extends javax.swing.JFrame {
         );
 
         getContentPane().add(cientifica, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 60, 420, 580));
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
 
         menu.setBackground(new java.awt.Color(23, 23, 23));
         menu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -2501,7 +2517,11 @@ public class Calculator extends javax.swing.JFrame {
        double a = this.valor1;
        this.resultado = Math.cos(a);
     }
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
          conPantalla(jButton5);
@@ -2660,7 +2680,11 @@ public class Calculator extends javax.swing.JFrame {
     //    this.extValores( jButton1.getText() );
 =======
         this.extValores( jButton1.getText() );
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
         
         //System.out.println( this.valor1 + " " + this.valor2 + " " + this.operacion );
         
@@ -2673,7 +2697,11 @@ public class Calculator extends javax.swing.JFrame {
             break; 
 =======
             case "+" : /* funcion de suma */ break; 
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
         }
         
         // desplegar Resultado en la pantalla 
@@ -2682,7 +2710,11 @@ public class Calculator extends javax.swing.JFrame {
        txtGen.setText( String.valueOf(this.resultado) );
 =======
        txtGen.setText( this.valor1 + " " + this.valor2 + " " + this. operacion ); 
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
     }//GEN-LAST:event_jButton22ActionPerformed
 
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
@@ -2902,7 +2934,11 @@ public class Calculator extends javax.swing.JFrame {
 =======
 
       this.extValores(jButton19.getText() );
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60ActionPerformed
@@ -2980,7 +3016,11 @@ public class Calculator extends javax.swing.JFrame {
         funCos();
     }//GEN-LAST:event_jButton56ActionPerformed
 
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
     /************************************ variables de la clase ************************************************************/
     /***********************************************************************************************************************/
     double valor1;
@@ -2993,7 +3033,11 @@ public class Calculator extends javax.swing.JFrame {
     /************************************ metodos de la clase ************************************************************/
 =======
      /************************************ metodos de la clase ************************************************************/
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
     /***********************************************************************************************************************/
    
     // borar la pantalla de la calc.
@@ -3004,7 +3048,11 @@ public class Calculator extends javax.swing.JFrame {
 =======
         jTextField1.setText("0.0");
         jTextField2.setText("0.0");
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
        // this.borrarValores();
     }
     
@@ -3047,7 +3095,11 @@ public class Calculator extends javax.swing.JFrame {
             /// verificar si la pantalla esta vacia, tiene 0 un numero 
         if ( ( Double.parseDouble( txt.getText() ) == 0 ) ){           
             if( textoOperacion == "-" || textoOperacion == "+" || textoOperacion == "/"){
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                // System.out.println(" la caja esta vacia ");
                 txt.setText(textoOperacion);
             }            
@@ -3074,7 +3126,11 @@ public class Calculator extends javax.swing.JFrame {
 =======
             }
             // si valor1 no esta vacio fue capturado el primer numero, se debe capturar el operador 
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             else
             {
                 // capturar valor 2
@@ -3129,7 +3185,11 @@ public class Calculator extends javax.swing.JFrame {
                 else {
                     txt.setText(this.menError);
                 }
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
     }
     
     public JTextField verPantalla(){
@@ -3191,7 +3251,11 @@ public class Calculator extends javax.swing.JFrame {
     private javax.swing.JButton btnRoot;
     private javax.swing.JButton btneFunction;
 =======
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
     private javax.swing.JPanel cientifica;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
@@ -3251,7 +3315,11 @@ public class Calculator extends javax.swing.JFrame {
     private javax.swing.JButton jButton57;
     private javax.swing.JButton jButton58;
     private javax.swing.JButton jButton59;
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton60;
     private javax.swing.JButton jButton62;

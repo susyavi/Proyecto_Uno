@@ -27,7 +27,11 @@
     <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-48,0,0,2,-65"/>
 =======
     <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,2,-48,0,0,2,-68"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
@@ -38,7 +42,11 @@
     <Container class="javax.swing.JPanel" name="cientifica">
 =======
     <Container class="javax.swing.JPanel" name="basica">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
       <Properties>
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="17" green="17" red="17" type="rgb"/>
@@ -304,7 +312,11 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
                 </MatteColorBorder>
               </Border>
@@ -497,7 +509,11 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
                 </MatteColorBorder>
               </Border>
@@ -534,7 +550,11 @@
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="jButton8">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -560,7 +580,11 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
                 </MatteColorBorder>
               </Border>
@@ -621,7 +645,11 @@
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="jButton9">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -636,7 +664,11 @@
             <Property name="text" type="java.lang.String" value="0"/>
 =======
             <Property name="text" type="java.lang.String" value="8"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -665,7 +697,11 @@
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="jButton10">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -680,7 +716,11 @@
             <Property name="text" type="java.lang.String" value="."/>
 =======
             <Property name="text" type="java.lang.String" value="5"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -715,7 +755,11 @@
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century Gothic" size="24" style="0"/>
@@ -727,7 +771,11 @@
             <Property name="text" type="java.lang.String" value="="/>
 =======
             <Property name="text" type="java.lang.String" value="4"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -756,7 +804,11 @@
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="jButton12">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -771,7 +823,11 @@
             <Property name="text" type="java.lang.String" value="+"/>
 =======
             <Property name="text" type="java.lang.String" value="9"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -800,7 +856,11 @@
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="jButton13">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -815,7 +875,11 @@
             <Property name="text" type="java.lang.String" value="-"/>
 =======
             <Property name="text" type="java.lang.String" value="x"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -844,7 +908,11 @@
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="jButton14">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -859,7 +927,11 @@
             <Property name="text" type="java.lang.String" value="x"/>
 =======
             <Property name="text" type="java.lang.String" value="-"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -886,7 +958,11 @@
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="jButton15">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -901,7 +977,11 @@
             <Property name="text" type="java.lang.String" value="/"/>
 =======
             <Property name="text" type="java.lang.String" value="6"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -928,7 +1008,11 @@
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="jButton16">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -943,7 +1027,11 @@
             <Property name="text" type="java.lang.String" value="&lt;"/>
 =======
             <Property name="text" type="java.lang.String" value="CE"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -972,7 +1060,11 @@
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="jButton17">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -987,7 +1079,11 @@
             <Property name="text" type="java.lang.String" value="9"/>
 =======
             <Property name="text" type="java.lang.String" value="M"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -1016,7 +1112,11 @@
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="jButton18">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -1031,7 +1131,11 @@
             <Property name="text" type="java.lang.String" value="M"/>
 =======
             <Property name="text" type="java.lang.String" value="&lt;"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -1060,7 +1164,11 @@
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="jButton19">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -1075,7 +1183,11 @@
             <Property name="text" type="java.lang.String" value="8"/>
 =======
             <Property name="text" type="java.lang.String" value="/"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -1134,7 +1246,11 @@
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder bottom="0" left="0" right="0" top="1">
                   <Color PropertyName="color" blue="0" green="33" red="cc" type="rgb"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                 </MatteColorBorder>
               </Border>
             </Property>
@@ -1177,7 +1293,11 @@
           </Constraints>
         </Component>
         <Component class="javax.swing.JButton" name="jButton25">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -1203,7 +1323,11 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder bottom="1" left="1" right="1" top="0">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
                 </MatteColorBorder>
               </Border>
@@ -1264,7 +1388,11 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder bottom="1" left="1" right="1" top="0">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
                 </MatteColorBorder>
               </Border>
@@ -1325,7 +1453,11 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder bottom="1" left="1" right="1" top="0">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
                 </MatteColorBorder>
               </Border>
@@ -1451,7 +1583,11 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder bottom="1" left="1" right="1" top="0">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
                 </MatteColorBorder>
               </Border>
@@ -1518,7 +1654,11 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder bottom="1" left="1" right="1" top="0">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
                 </MatteColorBorder>
               </Border>
@@ -1789,7 +1929,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton57">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century Gothic" size="12" style="1"/>
@@ -1802,7 +1946,11 @@
               <Image iconType="3" name="/imagenes/f_abajo2.png"/>
             </Property>
 =======
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder bottom="1" left="1" right="1" top="0">
@@ -1813,7 +1961,11 @@
 <<<<<<< HEAD
             <Property name="borderPainted" type="boolean" value="false"/>
 =======
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="contentAreaFilled" type="boolean" value="false"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Cursor de Mano"/>
@@ -1825,7 +1977,11 @@
               <Image iconType="3" name="/imagenes/f_abajo1.png"/>
             </Property>
 =======
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="verticalAlignment" type="int" value="1"/>
             <Property name="verticalTextPosition" type="int" value="1"/>
           </Properties>
@@ -1873,7 +2029,11 @@
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Levenim MT" size="12" style="0"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             </Property>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="99" green="99" red="99" type="rgb"/>
@@ -1884,7 +2044,11 @@
             </Property>
 =======
             <Property name="text" type="java.lang.String" value="-"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder bottom="1" left="1" right="1" top="0">
@@ -1895,7 +2059,11 @@
 <<<<<<< HEAD
             <Property name="borderPainted" type="boolean" value="false"/>
 =======
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="contentAreaFilled" type="boolean" value="false"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Cursor de Mano"/>
@@ -1925,7 +2093,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton33">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -1951,7 +2123,11 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder bottom="1" left="1" right="1" top="0">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
                 </MatteColorBorder>
               </Border>
@@ -2063,7 +2239,11 @@
           </Properties>
         </Component>
         <Component class="javax.swing.JButton" name="jButton20">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2078,7 +2258,11 @@
             <Property name="text" type="java.lang.String" value=" "/>
 =======
             <Property name="text" type="java.lang.String" value="0"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2100,7 +2284,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton21">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2115,7 +2303,11 @@
             <Property name="text" type="java.lang.String" value="Rad"/>
 =======
             <Property name="text" type="java.lang.String" value="."/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2145,7 +2337,11 @@
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="0" green="33" red="cc" type="rgb"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century Gothic" size="24" style="0"/>
@@ -2157,7 +2353,11 @@
             <Property name="text" type="java.lang.String" value=" "/>
 =======
             <Property name="text" type="java.lang.String" value="="/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2179,7 +2379,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton23">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2194,7 +2398,11 @@
             <Property name="text" type="java.lang.String" value="e^"/>
 =======
             <Property name="text" type="java.lang.String" value="+"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2218,7 +2426,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton24">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2233,7 +2445,11 @@
             <Property name="text" type="java.lang.String" value="^"/>
 =======
             <Property name="text" type="java.lang.String" value="-"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2257,7 +2473,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton26">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2272,7 +2492,11 @@
             <Property name="text" type="java.lang.String" value="sqrt"/>
 =======
             <Property name="text" type="java.lang.String" value="x"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2294,7 +2518,11 @@
 =======
         </Component>
         <Component class="javax.swing.JButton" name="jButton35">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2309,7 +2537,11 @@
             <Property name="text" type="java.lang.String" value="Log"/>
 =======
             <Property name="text" type="java.lang.String" value="/"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2355,7 +2587,11 @@
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Century Gothic" size="24" style="0"/>
@@ -2367,7 +2603,11 @@
             <Property name="text" type="java.lang.String" value="="/>
 =======
             <Property name="text" type="java.lang.String" value="&lt;"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2396,7 +2636,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton37">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2411,7 +2655,11 @@
             <Property name="text" type="java.lang.String" value="0"/>
 =======
             <Property name="text" type="java.lang.String" value="9"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2440,7 +2688,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton38">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2455,7 +2707,11 @@
             <Property name="text" type="java.lang.String" value="."/>
 =======
             <Property name="text" type="java.lang.String" value="M"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2484,7 +2740,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton39">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2499,7 +2759,11 @@
             <Property name="text" type="java.lang.String" value="1"/>
 =======
             <Property name="text" type="java.lang.String" value="8"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2528,7 +2792,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton40">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2543,7 +2811,11 @@
             <Property name="text" type="java.lang.String" value="2"/>
 =======
             <Property name="text" type="java.lang.String" value="5"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2572,7 +2844,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton41">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2587,7 +2863,11 @@
             <Property name="text" type="java.lang.String" value="3"/>
 =======
             <Property name="text" type="java.lang.String" value="2"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2616,7 +2896,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton42">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2631,7 +2915,11 @@
             <Property name="text" type="java.lang.String" value="+"/>
 =======
             <Property name="text" type="java.lang.String" value="6"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2660,7 +2948,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton43">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2675,7 +2967,11 @@
             <Property name="text" type="java.lang.String" value="7"/>
 =======
             <Property name="text" type="java.lang.String" value="3"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2704,7 +3000,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton44">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2719,7 +3019,11 @@
             <Property name="text" type="java.lang.String" value="8"/>
 =======
             <Property name="text" type="java.lang.String" value="1"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2748,7 +3052,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton45">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2763,7 +3071,11 @@
             <Property name="text" type="java.lang.String" value="5"/>
 =======
             <Property name="text" type="java.lang.String" value="4"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2792,7 +3104,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton46">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2807,7 +3123,11 @@
             <Property name="text" type="java.lang.String" value="4"/>
 =======
             <Property name="text" type="java.lang.String" value="7"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2836,7 +3156,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton47">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -2851,7 +3175,11 @@
             <Property name="text" type="java.lang.String" value="9"/>
 =======
             <Property name="text" type="java.lang.String" value="CE"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -2907,7 +3235,11 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder bottom="1" left="1" right="1" top="0">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
                 </MatteColorBorder>
               </Border>
@@ -2977,7 +3309,11 @@
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder bottom="0" left="0" right="0" top="1">
                   <Color PropertyName="color" blue="0" green="33" red="cc" type="rgb"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                 </MatteColorBorder>
               </Border>
             </Property>
@@ -3033,7 +3369,11 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder bottom="1" left="1" right="1" top="0">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
                 </MatteColorBorder>
               </Border>
@@ -3073,7 +3413,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton48">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -3088,7 +3432,11 @@
             <Property name="text" type="java.lang.String" value="CE"/>
 =======
             <Property name="text" type="java.lang.String" value="Tan"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -3117,7 +3465,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton51">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -3132,7 +3484,11 @@
             <Property name="text" type="java.lang.String" value="M"/>
 =======
             <Property name="text" type="java.lang.String" value="Cot"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -3161,7 +3517,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton52">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -3176,7 +3536,11 @@
             <Property name="text" type="java.lang.String" value="&lt;"/>
 =======
             <Property name="text" type="java.lang.String" value="Sec"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -3205,7 +3569,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton53">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -3220,7 +3588,11 @@
             <Property name="text" type="java.lang.String" value="/"/>
 =======
             <Property name="text" type="java.lang.String" value=" "/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
@@ -3277,7 +3649,11 @@
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                 </MatteColorBorder>
               </Border>
             </Property>
@@ -3320,7 +3696,11 @@
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton55">
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="17" green="17" red="17" type="rgb"/>
@@ -3346,7 +3726,11 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
                 </MatteColorBorder>
               </Border>
@@ -3407,7 +3791,11 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
                 </MatteColorBorder>
               </Border>
@@ -3468,7 +3856,11 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
                 </MatteColorBorder>
               </Border>
@@ -3563,7 +3955,11 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
                 </MatteColorBorder>
               </Border>
@@ -3627,7 +4023,11 @@
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
                 <MatteColorBorder>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
                   <Color PropertyName="color" blue="66" green="66" red="66" type="rgb"/>
                 </MatteColorBorder>
               </Border>
@@ -3663,7 +4063,11 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton60ActionPerformed"/>
           </Events>
+<<<<<<< HEAD
 >>>>>>> features
+=======
+>>>>>>> 96bfedc6f80ddff542503b176035ffff3ea68c23
+>>>>>>> 72e8ff62b1c1d5f52840bea7957bf90dba137ef3
         </Component>
       </SubComponents>
     </Container>
