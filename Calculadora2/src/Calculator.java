@@ -1527,7 +1527,21 @@ public class Calculator extends javax.swing.JFrame {
         
         // decidir que operacion realizar segun la propiedad operacion
         switch(operacion){
-            case "+" : /* funcion de suma */
+            /* funcion de suma */ 
+            case "+" :
+                funSum();
+            break;
+            
+            /* funcion de resta */ 
+            case "-" :
+                funRes();
+            break;
+            
+            /* funcion de multiplicacion */ 
+            case "x" :
+                funMul();
+            break;
+                
             case "^" :
                 potencia();    // Llamada del método potencia
             break; 
@@ -1538,6 +1552,24 @@ public class Calculator extends javax.swing.JFrame {
        txtGen.setText( String.valueOf(this.resultado) );
     }//GEN-LAST:event_jButton22ActionPerformed
 
+    public void funSum(){
+        double a = this.valor1;
+        double b = this.valor2;
+        this.resultado=a+b;
+    }
+    
+    public void funRes(){
+        double a = this.valor1;
+        double b = this.valor2;
+        this.resultado=a-b;
+    }
+    
+    public void funMul(){
+        double a = this.valor1;
+        double b = this.valor2;
+        this.resultado=a*b;
+    }
+    
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton36ActionPerformed
