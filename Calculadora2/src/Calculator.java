@@ -1366,43 +1366,18 @@ public class Calculator extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton1ActionPerformed
     public void funDiv(){
-        try{
-            double a = this.valor1;
-            double b = this.valor2;
-            JTextField txtGen = this.verPantalla();
-            txtGen.setText(String.valueOf(a/b));
-        }
-        catch(Exception e){
-            JTextField txtGen = this.verPantalla();
-            txtGen.setText("Error");
-        }
+        double a = this.valor1;
+        double b = this.valor2;
+        resultado = a/b;
     }
     public void funSen(){
-       try{
-       double a = Integer.parseInt(jTextField2.getText());
-       JTextField txtGen = this.verPantalla();
-        txtGen.setText(String.valueOf(Math.sin(a)));
-       //jTextField2.setText(String.valueOf(Math.sin(a)));
-        }
-        catch(Exception e){
-            JTextField txtGen = this.verPantalla();
-            txtGen.setText("Error");
-
-        }
+       double a = this.valor1;
+       resultado = Math.sin(a);
         
     }
     public void funCos(){
-        try{
-       double a = Integer.parseInt(jTextField2.getText());
-       JTextField txtGen = this.verPantalla();
-        txtGen.setText(String.valueOf(Math.cos(a)));
-       //jTextField2.setText(String.valueOf(Math.sin(a)));
-        }
-        catch(Exception e){
-            JTextField txtGen = this.verPantalla();
-            txtGen.setText("Error");
-
-        }
+       double a = this.valor1;
+       resultado = Math.cos(a);
     }
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
