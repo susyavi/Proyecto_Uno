@@ -1366,28 +1366,42 @@ public class Calculator extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jButton1ActionPerformed
     public void funDiv(){
-        double a = this.valor1;
-        double b = this.valor2;
-       jTextField1.setText(String.valueOf(a/b));
-        
+        try{
+            double a = this.valor1;
+            double b = this.valor2;
+            JTextField txtGen = this.verPantalla();
+            txtGen.setText(String.valueOf(a/b));
+        }
+        catch(Exception e){
+            JTextField txtGen = this.verPantalla();
+            txtGen.setText("Error");
+        }
     }
     public void funSen(){
        try{
        double a = Integer.parseInt(jTextField2.getText());
-       jTextField2.setText(String.valueOf(Math.sin(a)));
+       JTextField txtGen = this.verPantalla();
+        txtGen.setText(String.valueOf(Math.sin(a)));
+       //jTextField2.setText(String.valueOf(Math.sin(a)));
         }
         catch(Exception e){
-            jTextField2.setText("Error");
+            JTextField txtGen = this.verPantalla();
+            txtGen.setText("Error");
+
         }
         
     }
     public void funCos(){
         try{
        double a = Integer.parseInt(jTextField2.getText());
-       jTextField2.setText(String.valueOf(Math.cos(a)));
+       JTextField txtGen = this.verPantalla();
+        txtGen.setText(String.valueOf(Math.cos(a)));
+       //jTextField2.setText(String.valueOf(Math.sin(a)));
         }
         catch(Exception e){
-            jTextField2.setText("Error");
+            JTextField txtGen = this.verPantalla();
+            txtGen.setText("Error");
+
         }
     }
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
