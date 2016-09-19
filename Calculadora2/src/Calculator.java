@@ -1368,16 +1368,16 @@ public class Calculator extends javax.swing.JFrame {
     public void funDiv(){
         double a = this.valor1;
         double b = this.valor2;
-        resultado = a/b;
+        this.resultado = a/b;
     }
     public void funSen(){
        double a = this.valor1;
-       resultado = Math.sin(a);
+       this.resultado = Math.sin(a);
         
     }
     public void funCos(){
        double a = this.valor1;
-       resultado = Math.cos(a);
+       this.resultado = Math.cos(a);
     }
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
