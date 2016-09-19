@@ -492,13 +492,13 @@ public class Calculator extends javax.swing.JFrame {
             }
         });
         basica.add(jLabel2);
-        jLabel2.setBounds(115, 70, 95, 24);
+        jLabel2.setBounds(115, 70, 92, 26);
 
         jLabel6.setFont(new java.awt.Font("Century Gothic", 0, 20)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Básica");
         basica.add(jLabel6);
-        jLabel6.setBounds(25, 70, 65, 24);
+        jLabel6.setBounds(25, 70, 63, 26);
 
         jButton29.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
         jButton29.setForeground(new java.awt.Color(153, 153, 153));
@@ -966,18 +966,28 @@ public class Calculator extends javax.swing.JFrame {
         jButton55.setBackground(new java.awt.Color(23, 23, 23));
         jButton55.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
         jButton55.setForeground(new java.awt.Color(204, 204, 204));
-        jButton55.setText(" ");
+        jButton55.setText("Sen");
         jButton55.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jButton55.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton55.setFocusable(false);
+        jButton55.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton55ActionPerformed(evt);
+            }
+        });
 
         jButton56.setBackground(new java.awt.Color(23, 23, 23));
         jButton56.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
         jButton56.setForeground(new java.awt.Color(204, 204, 204));
-        jButton56.setText(" ");
+        jButton56.setText("Cos");
         jButton56.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jButton56.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton56.setFocusable(false);
+        jButton56.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton56ActionPerformed(evt);
+            }
+        });
 
         jButton58.setBackground(new java.awt.Color(23, 23, 23));
         jButton58.setFont(new java.awt.Font("Century Gothic", 0, 24)); // NOI18N
@@ -1343,15 +1353,43 @@ public class Calculator extends javax.swing.JFrame {
         
         // decidir que operacion realizar segun la propiedad operacion
         switch(operacion){
-            case "+" : /* funcion de suma */ break; 
+            /* funcion de división */ 
+            case "/" :
+                funDiv();  
+                break;
+            
         }
         
         // desplegar Resultado en la pantalla 
-       JTextField txtGen = this.verPantalla();
-       txtGen.setText( this.valor1 + " " + this.valor2 + " " + this. operacion );
+       //JTextField txtGen = this.verPantalla();
+       //txtGen.setText( this.valor1 + " " + this.valor2 + " " + this. operacion );
 
     }//GEN-LAST:event_jButton1ActionPerformed
-
+    public void funDiv(){
+        double a = this.valor1;
+        double b = this.valor2;
+       jTextField1.setText(String.valueOf(a/b));
+        
+    }
+    public void funSen(){
+       try{
+       double a = Integer.parseInt(jTextField2.getText());
+       jTextField2.setText(String.valueOf(Math.sin(a)));
+        }
+        catch(Exception e){
+            jTextField2.setText("Error");
+        }
+        
+    }
+    public void funCos(){
+        try{
+       double a = Integer.parseInt(jTextField2.getText());
+       jTextField2.setText(String.valueOf(Math.cos(a)));
+        }
+        catch(Exception e){
+            jTextField2.setText("Error");
+        }
+    }
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
          conPantalla(jButton5);
@@ -1731,8 +1769,8 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // TODO add your handling code here:
-      
+
+      this.extValores(jButton19.getText() );
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void jButton60ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton60ActionPerformed
@@ -1755,6 +1793,14 @@ public class Calculator extends javax.swing.JFrame {
         // TODO add your handling code here:
         this.extValores(jButton24.getText() );
     }//GEN-LAST:event_jButton24ActionPerformed
+
+    private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
+        funSen();
+    }//GEN-LAST:event_jButton55ActionPerformed
+
+    private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
+        funCos();
+    }//GEN-LAST:event_jButton56ActionPerformed
 
     /************************************ variables de la clase ************************************************************/
     /***********************************************************************************************************************/
@@ -1807,7 +1853,7 @@ public class Calculator extends javax.swing.JFrame {
         try{
             /// verificar si la pantalla esta vacia, tiene 0 un numero 
         if ( ( Double.parseDouble( txt.getText() ) == 0 ) ){           
-            if( textoOperacion == "-" || textoOperacion == "+"){
+            if( textoOperacion == "-" || textoOperacion == "+" || textoOperacion == "/"){
                // System.out.println(" la caja esta vacia ");
                 txt.setText(textoOperacion);
             }            
