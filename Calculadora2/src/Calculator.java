@@ -1489,7 +1489,7 @@ public class Calculator extends javax.swing.JFrame {
         // decidir que operacion realizar segun la propiedad operacion
         switch(operacion){
             case "+" : /* funcion de suma */
-            case "^"
+            case "^" :
                 potencia();     // Uso de la funcion para calcular x elevado a una potencia y
             break; 
         }
