@@ -1803,6 +1803,10 @@ public class Calculator extends javax.swing.JFrame {
                 potencia();     // Uso de la funcion para calcular x elevado a una potencia y
             break; 
             
+            case "sqrt" :
+                raiz();
+            break;
+            
             case "M" :
                 
             break; 
@@ -2158,22 +2162,19 @@ public class Calculator extends javax.swing.JFrame {
 
     private void jButton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton69ActionPerformed
         // TODO add your handling code here:
-        raiz();
+        //EVENTO DEL BOTON PARA REALIZAR LA RAZI n-esima DE UN VALOR NUMÉRIDOC DADO
+        this.valor1 = Double.parseDouble(jTextField2.getText());        
+        this.operacion = jButton69.getText();
+        borrarPantalla();
     }//GEN-LAST:event_jButton69ActionPerformed
 // METODO PARA CALCULAR LA RAIZ CUADRADA DE UN NUMERO
-// LA RAIZ n-esima DE UN NUMERO PUEDE SER REPRESENTADO COMO UNA FRACCION Y UTILIZAR EL METODO POTENCIA PARA REALIZARLO
+// LA RAIZ n-esima DE UN NUMERO PUEDE SER REPRESENTADO COMO UNA FRACCION
     private void raiz(){
-        DecimalFormat objFormato = new DecimalFormat("#.#########");        
-        String signo = jTextField2.getText();
-
+        Double exponente;
         try{
-            // EL RESULTADO SE OBTIENE UTILIZANDO LA FUNCION 'sqrt' YA DEFINIDA EN LA LIBRERIA 'Math' de JAVA Y SE GUARDAR EN LA PROPIEDAD 'resultado'
-            this.valor1 = Double.parseDouble(jTextField2.getText());
-            this.resultado = Math.sqrt(valor1);
-
-            // EN EL MISMO METODO SE MUESTRA EL VALOR RESULTANTE DE LA OPERACION ELEGIDA
-            JTextField txtGen = this.verPantalla();
-            txtGen.setText(objFormato.format(this.resultado));
+            this.valor2 = Double.parseDouble(jTextField2.getText());
+            exponente = 1/this.valor1;
+            this.resultado = Math.pow(valor2, exponente);
         }catch(Exception e){
             jTextField2.setText(this.menError);
         }
