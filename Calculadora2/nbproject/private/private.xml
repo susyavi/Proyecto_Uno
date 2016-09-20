@@ -2,8 +2,15 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+<<<<<<< HEAD
+        <group name="NetBeansProjects-Elementary">
+            <file>file:/home/alejandro/MEGAsync/Universidad%20de%20Guanajuato/4to%20Semestre/Desarrollo%20de%20software/Proyecto1/Proyecto_Uno-features/Calculadora2/src/Calculator.java</file>
+        </group>
+        <group/>
+=======
         <group>
             <file>file:/C:/Users/frodo/Documents/Proyectos/desarrolloSottware/calculadora/Proyecto_Uno/Calculadora2/src/Calculator.java</file>
         </group>
+>>>>>>> 8c3d56bdbf7636521eb08f54ff2d6ca2e8a3d48d
     </open-files>
 </project-private>
