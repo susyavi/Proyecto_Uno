@@ -1791,7 +1791,7 @@ public class Calculator extends javax.swing.JFrame {
             
              /* funcion de divicion */ 
             case "/" :
-                //funDiv();
+                funDiv();
             break;
             
             /* funcion de multiplicacion */ 
@@ -2358,9 +2358,11 @@ public class Calculator extends javax.swing.JFrame {
                     //System.out.println(valor1);
                     else
                 {
-                    switch( txt.getText() ){
-                        case "Pi": this.valor1 = Math.PI; break;
-                        case "e": this.valor1 = Math.E; break;
+                    if( txt.getText().compareTo("Pi") == 0 || txt.getText().compareTo("e") == 0 ){
+                        switch( txt.getText() ){
+                            case "Pi": this.valor1 = Math.PI; break;
+                            case "e": this.valor1 = Math.E; break;
+                        }
                     }
                 }
       
