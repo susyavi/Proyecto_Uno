@@ -243,6 +243,11 @@ public class Calculator extends javax.swing.JFrame {
         jButton23.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jButton23.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton23.setFocusable(false);
+        jButton23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton23MouseClicked(evt);
+            }
+        });
         jButton23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton23ActionPerformed(evt);
@@ -269,6 +274,11 @@ public class Calculator extends javax.swing.JFrame {
         jButton26.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jButton26.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton26.setFocusable(false);
+        jButton26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton26ActionPerformed(evt);
+            }
+        });
 
         jButton35.setBackground(new java.awt.Color(23, 23, 23));
         jButton35.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
@@ -277,6 +287,11 @@ public class Calculator extends javax.swing.JFrame {
         jButton35.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jButton35.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton35.setFocusable(false);
+        jButton35.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton35ActionPerformed(evt);
+            }
+        });
 
         jButton36.setBackground(new java.awt.Color(23, 23, 23));
         jButton36.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
@@ -285,6 +300,11 @@ public class Calculator extends javax.swing.JFrame {
         jButton36.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jButton36.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton36.setFocusable(false);
+        jButton36.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton36MouseClicked(evt);
+            }
+        });
         jButton36.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton36ActionPerformed(evt);
@@ -1143,6 +1163,11 @@ public class Calculator extends javax.swing.JFrame {
         jButton18.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jButton18.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton18.setFocusable(false);
+        jButton18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton18MouseClicked(evt);
+            }
+        });
         jButton18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton18ActionPerformed(evt);
@@ -1515,6 +1540,11 @@ public class Calculator extends javax.swing.JFrame {
                 funRes();
             break;
             
+             /* funcion de divicion */ 
+            case "/" :
+                //funDiv();
+            break;
+            
             /* funcion de multiplicacion */ 
             case "x" :
                 funMul();
@@ -1523,11 +1553,16 @@ public class Calculator extends javax.swing.JFrame {
             case "^" :
                 potencia();     // Uso de la funcion para calcular x elevado a una potencia y
             break; 
+            
+            case "M" :
+                
+            break; 
         }
         
         // desplegar Resultado en la pantalla 
        JTextField txtGen = this.verPantalla();
-       txtGen.setText( this.valor1 + " " + this.valor2 + " " + this. operacion );
+       txtGen.setText(  String.valueOf(this.resultado) );
+       this.borrarValores();
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -1538,6 +1573,9 @@ public class Calculator extends javax.swing.JFrame {
 
     private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
         // TODO add your handling code here:
+        
+        
+        
        
     }//GEN-LAST:event_jButton18ActionPerformed
 
@@ -1671,6 +1709,7 @@ public class Calculator extends javax.swing.JFrame {
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
         // TODO add your handling code here:
+        this.extValores(jButton17.getText() );
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -1691,7 +1730,46 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-   
+        this.extValores( jButton1.getText() );
+        
+        //System.out.println( this.valor1 + " " + this.valor2 + " " + this.operacion );
+        
+        // decidir que operacion realizar segun la propiedad operacion
+        switch(operacion){
+
+            /* funcion de suma */ 
+            case "+" :
+                funSum();
+            break;
+            
+            /* funcion de resta */ 
+            case "-" :
+                funRes();
+            break;
+            
+             /* funcion de divicion */ 
+            case "/" :
+                //funDiv();
+            break;
+            
+            /* funcion de multiplicacion */ 
+            case "x" :
+                funMul();
+            break;
+            
+            case "^" :
+                potencia();     // Uso de la funcion para calcular x elevado a una potencia y
+            break; 
+            
+            case "M" :
+                
+            break; 
+        }
+        
+        // desplegar Resultado en la pantalla 
+       JTextField txtGen = this.verPantalla();
+       txtGen.setText(  String.valueOf(this.resultado) );
+       this.borrarValores();
     }//GEN-LAST:event_jButton22ActionPerformed
     
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
@@ -1700,6 +1778,7 @@ public class Calculator extends javax.swing.JFrame {
 
     private void jButton38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton38ActionPerformed
         // TODO add your handling code here:
+         conPantalla(jButton38);
     }//GEN-LAST:event_jButton38ActionPerformed
 
     private void jButton41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton41ActionPerformed
@@ -1894,6 +1973,7 @@ public class Calculator extends javax.swing.JFrame {
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
         // TODO add your handling code here:
+        this.extValores(jButton19.getText() );
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
@@ -1904,7 +1984,7 @@ public class Calculator extends javax.swing.JFrame {
 
     private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
         // TODO add your handling code here:
-        this.extValores(jButton23.getText() );
+        
     }//GEN-LAST:event_jButton23ActionPerformed
 
     private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
@@ -2111,7 +2191,45 @@ public class Calculator extends javax.swing.JFrame {
 
     private void jButton56ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton56ActionPerformed
         // TODO add your handling code here:
+         conPantalla(jButton56);
     }//GEN-LAST:event_jButton56ActionPerformed
+
+    private void jButton18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton18MouseClicked
+        // TODO add your handling code here:
+        // quitar el ultimo numero de la caja de texto
+        JTextField txtGen = this.verPantalla();
+        char [] pantall = txtGen.getText().toCharArray() ;
+        int finl = pantall.length -1  ;
+        pantall[finl] = ' ';
+        
+        txtGen.setText(pantall.toString());
+    }//GEN-LAST:event_jButton18MouseClicked
+
+    private void jButton36MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton36MouseClicked
+        // TODO add your handling code here:
+        // quitar el ultimo numero de la caja de texto
+        JTextField txtGen = this.verPantalla();
+        char [] pantall = txtGen.getText().toCharArray() ;
+        int finl = pantall.length -1 ;
+        pantall[finl] = ' ';
+        
+        txtGen.setText(pantall.toString());
+    }//GEN-LAST:event_jButton36MouseClicked
+
+    private void jButton23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton23MouseClicked
+        // TODO add your handling code here:
+        this.extValores(jButton23.getText() );
+    }//GEN-LAST:event_jButton23MouseClicked
+
+    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+        // TODO add your handling code here:
+        this.extValores(jButton26.getText() );
+    }//GEN-LAST:event_jButton26ActionPerformed
+
+    private void jButton35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton35ActionPerformed
+        // TODO add your handling code here:
+        this.extValores(jButton35.getText() );
+    }//GEN-LAST:event_jButton35ActionPerformed
     
     /************************************ variables de la clase ************************************************************/
     /***********************************************************************************************************************/
@@ -2174,25 +2292,38 @@ public class Calculator extends javax.swing.JFrame {
             // si valor 1 esta vacio
        
             if ( valor1 == 0 && operacion == null  ){
+                if( txt.getText().compareTo("Pi") != 0 && txt.getText().compareTo("e") != 0 )
                     this.valor1 = Double.parseDouble( txt.getText() );
                     //System.out.println(valor1);
-       
-                
-                //System.out.println("extrallendo el signo");
-            
+                    else
+                {
+                    switch( txt.getText() ){
+                        case "Pi": this.valor1 = Math.PI; break;
+                        case "e": this.valor1 = Math.E; break;
+                    }
+                }
+      
                 // conseguir el operador 
                 operacion = textoOperacion;
                 //System.out.println(operacion);
                 borrarPantalla();
-                jTextField2.setText("");
             }
             // si valor1 no esta vacio, fue capturado el primer numero, se debe capturar el operador 
             else
             {
                 // capturar valor 2
-                if( valor1 != 0 && operacion != null && ( txt.getText() != "-" || txt.getText() != "+" )  ){                
+                if( valor1 != 0 && operacion != null && ( txt.getText() != "-" || txt.getText() != "+" )  ){   
+                    
+                    if( txt.getText().compareTo("Pi") != 0 && txt.getText().compareTo("e") != 0 )
                         this.valor2 = Double.parseDouble( txt.getText() );
-                        //System.out.println(valor2);
+                    //System.out.println(valor1);
+                    else
+                    {
+                        switch( txt.getText() ){
+                            case "Pi": this.valor2 = Math.PI; break;
+                            case "e": this.valor2 = Math.E; break;
+                        }
+                    }
                 }
             }    
         }
