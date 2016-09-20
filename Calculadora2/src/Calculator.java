@@ -1488,7 +1488,10 @@ public class Calculator extends javax.swing.JFrame {
         
         // decidir que operacion realizar segun la propiedad operacion
         switch(operacion){
-            case "+" : /* funcion de suma */ break; 
+            case "+" : /* funcion de suma */
+            case "^"
+                potencia();     // Uso de la funcion para calcular x elevado a una potencia y
+            break; 
         }
         
         // desplegar Resultado en la pantalla 
@@ -1896,16 +1899,6 @@ public class Calculator extends javax.swing.JFrame {
         this.extValores(jButton24.getText() );
     }//GEN-LAST:event_jButton24ActionPerformed
     
-    private void exponencial(){
-        DecimalFormat objFormato = new DecimalFormat("#.#########");
-        // EL RESULTADO SE OBTIENE UTILIZANDO LA FUNCIÓN EXPONENCIAL YA DEFINIDA EN LA LIBRERIA 'Math' DE JAVA Y SE GUARDA EN LA PROPIEDAD 'resultado'       
-        this.resultado = Math.exp(valor1);
-        
-        // EN EL MISMO METODO DEL BOTON SE UTILIZA PARA MOSTRAR EL VALOR EN EL CAMPO DE TEXTO
-        JTextField txtGen = this.verPantalla();
-        txtGen.setText(objFormato.format(this.resultado));
-    }
-    
     private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
         // TODO add your handling code here:
         variable = 1;
@@ -1941,15 +1934,66 @@ public class Calculator extends javax.swing.JFrame {
 
     private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
         // TODO add your handling code here:
+        exponencial();
     }//GEN-LAST:event_jButton64ActionPerformed
+// METODO PARA CALCULAR LA FUNCION EXPONENCIAL DE UN NUMERO DADO x
+    private void exponencial(){
+        DecimalFormat objFormato = new DecimalFormat("#.#########");
+        String signo = jTextField2.getText();
+        
+        try{
+            // EL RESULTADO SE OBTIENE UTILIZANDO LA FUNCIÓN EXPONENCIAL YA DEFINIDA EN LA LIBRERIA 'Math' DE JAVA Y SE GUARDA EN LA PROPIEDAD 'resultado'       
+            this.valor1 = Double.parseDouble(jTextField2.getText());
+            this.resultado = Math.exp(valor1);
+
+            // EN EL MISMO METODO DEL BOTON SE UTILIZA PARA MOSTRAR EL VALOR EN EL CAMPO DE TEXTO
+            JTextField txtGen = this.verPantalla();
+            txtGen.setText(objFormato.format(this.resultado));
+        }catch(Exception e){
+            jTextField2.setText(this.menError);
+        }
+    }
 
     private void jButton67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton67ActionPerformed
         // TODO add your handling code here:
+        this.valor1 = Double.parseDouble(jTextField2.getText());
+        this.operacion = jButton67.getText();
+        borrarPantalla();
     }//GEN-LAST:event_jButton67ActionPerformed
+// METODO PARA CALCULAR UN NUMERO x ELEVADO A UNA POTENCIA y
+    private void potencia(){
+        DecimalFormat objFormato = new DecimalFormat("#.#########");
+        try{
+            this.valor2 = Double.parseDouble(jTextField2.getText());
+            this.resultado = Math.pow(valor1, valor2);
+            jTextField2.setText(objFormato.format(this.resultado));
+        }catch(Exception e){
+            jTextField2.setText(this.menError);
+        }
+    }
 
     private void jButton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton69ActionPerformed
         // TODO add your handling code here:
+        raiz();
     }//GEN-LAST:event_jButton69ActionPerformed
+// METODO PARA CALCULAR LA RAIZ CUADRADA DE UN NUMERO
+// LA RAIZ n-esima DE UN NUMERO PUEDE SER REPRESENTADO COMO UNA FRACCION Y UTILIZAR EL METODO POTENCIA PARA REALIZARLO
+    private void raiz(){
+        DecimalFormat objFormato = new DecimalFormat("#.#########");        
+        String signo = jTextField2.getText();
+
+        try{
+            // EL RESULTADO SE OBTIENE UTILIZANDO LA FUNCION 'sqrt' YA DEFINIDA EN LA LIBRERIA 'Math' de JAVA Y SE GUARDAR EN LA PROPIEDAD 'resultado'
+            this.valor1 = Double.parseDouble(jTextField2.getText());
+            this.resultado = Math.sqrt(valor1);
+
+            // EN EL MISMO METODO SE MUESTRA EL VALOR RESULTANTE DE LA OPERACION ELEGIDA
+            JTextField txtGen = this.verPantalla();
+            txtGen.setText(objFormato.format(this.resultado));
+        }catch(Exception e){
+            jTextField2.setText(this.menError);
+        }
+    }
 
     private void jButton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton70ActionPerformed
         // TODO add your handling code here:
@@ -2029,21 +2073,6 @@ public class Calculator extends javax.swing.JFrame {
     private void jTextField2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyPressed
 
     }//GEN-LAST:event_jTextField2KeyPressed
-    
-    private void raiz(){
-        DecimalFormat objFormato = new DecimalFormat("#.#########");        
-        // EL RESULTADO SE OBTIENE UTILIZANDO LA FUNCION 'sqrt' YA DEFINIDA EN LA LIBRERIA 'Math' de JAVA Y SE GUARDAR EN LA PROPIEDAD 'resultado'
-        this.resultado = Math.sqrt(valor1);
-        
-        // EN EL MISMO METODO SE MUESTRA EL VALOR RESULTANTE DE LA OPERACION ELEGIDA
-        JTextField txtGen = this.verPantalla();
-        txtGen.setText(objFormato.format(this.resultado));
-    }
-    
-    private void potencia(){
-        this.valor2 = Double.parseDouble(jTextField2.getText());
-        this.resultado = Math.pow(valor1, valor2);
-    }
     
     /************************************ variables de la clase ************************************************************/
     /***********************************************************************************************************************/
