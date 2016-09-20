@@ -12,6 +12,7 @@ public class Calculator extends javax.swing.JFrame {
         menu.setVisible(false);
         cientifica.setVisible(false);
         DecimalFormat objFormato = new DecimalFormat("#.#########");
+        jButton64.setText("e^");        // CAMBIA EL TEXTO EN EL BOTON DE LA FUNCION EXPONENCIAL
         }
 
     @SuppressWarnings("unchecked")
