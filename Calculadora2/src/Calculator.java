@@ -657,6 +657,7 @@ public class Calculator extends javax.swing.JFrame {
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jRadioButton2.setForeground(new java.awt.Color(204, 204, 204));
+        jRadioButton2.setSelected(true);
         jRadioButton2.setText("Deg");
         jRadioButton2.setContentAreaFilled(false);
         jRadioButton2.setFocusPainted(false);
@@ -1491,7 +1492,10 @@ public class Calculator extends javax.swing.JFrame {
             case "+" : /* funcion de suma */
             case "^" :
                 potencia();     // Uso de la funcion para calcular x elevado a una potencia y
-            break; 
+            break;
+            case "/":
+                funDiv();
+            break;
         }
         
         // desplegar Resultado en la pantalla 
@@ -1499,6 +1503,26 @@ public class Calculator extends javax.swing.JFrame {
        txtGen.setText( this.valor1 + " " + this.valor2 + " " + this. operacion );
 
     }//GEN-LAST:event_jButton1ActionPerformed
+    public void funDiv(){
+        double a = this.valor1;
+        double b = this.valor2;
+        this.resultado = a/b;
+    }
+    public void funSen(){
+       double a = this.valor1;
+        if(jRadioButton2.isSelected()){
+            a=Math.toRadians(a);
+        }
+        jTextField2.setText(String.valueOf(Math.sin(a))); 
+    }
+    public void funCos(){
+        double a = this.valor1;
+        if(jRadioButton2.isSelected()){
+            a=Math.toRadians(a);
+        }
+        jTextField2.setText(String.valueOf(Math.cos(a))); 
+        
+    }
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
@@ -1880,7 +1904,7 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton13ActionPerformed
 
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // TODO add your handling code here:
+        this.extValores(jButton19.getText() );
     }//GEN-LAST:event_jButton19ActionPerformed
 
     private void formWindowActivated(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowActivated
@@ -1900,8 +1924,8 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton24ActionPerformed
     
     private void jButton54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton54ActionPerformed
-        // TODO add your handling code here:
-        variable = 1;
+        this.extValores(jButton54.getText() );
+        funCos();
     }//GEN-LAST:event_jButton54ActionPerformed
 
     private void jButton52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton52ActionPerformed
@@ -1925,7 +1949,8 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton52ActionPerformed
 
     private void jButton55ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton55ActionPerformed
-        // TODO add your handling code here:
+        this.extValores(jButton55.getText() );
+        funSen();
     }//GEN-LAST:event_jButton55ActionPerformed
 
     private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
