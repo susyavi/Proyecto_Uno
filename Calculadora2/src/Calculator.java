@@ -2162,10 +2162,14 @@ public class Calculator extends javax.swing.JFrame {
 
     private void jButton69ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton69ActionPerformed
         // TODO add your handling code here:
-        //EVENTO DEL BOTON PARA REALIZAR LA RAZI n-esima DE UN VALOR NUMÉRIDOC DADO
-        this.valor1 = Double.parseDouble(jTextField2.getText());        
-        this.operacion = jButton69.getText();
-        borrarPantalla();
+        //EVENTO DEL BOTON PARA REALIZAR LA RAIZ n-esima DE UN VALOR NUMÉRIDOC DADO
+        try{
+            this.valor1 = Double.parseDouble(jTextField2.getText());        
+            this.operacion = jButton69.getText();
+            borrarPantalla();
+        }catch(Exception e){
+            jTextField2.setText(this.menError);
+        }
     }//GEN-LAST:event_jButton69ActionPerformed
 // METODO PARA CALCULAR LA RAIZ CUADRADA DE UN NUMERO
 // LA RAIZ n-esima DE UN NUMERO PUEDE SER REPRESENTADO COMO UNA FRACCION
