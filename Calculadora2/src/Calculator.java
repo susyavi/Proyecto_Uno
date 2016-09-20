@@ -1,8 +1,7 @@
 import java.text.DecimalFormat;
 import com.sun.awt.AWTUtilities;
 import java.awt.Color;
-import javax.swing.JButton;
-import javax.swing.JTextField;
+import javax.swing.*;
 
 public class Calculator extends javax.swing.JFrame {
 
@@ -459,9 +458,22 @@ public class Calculator extends javax.swing.JFrame {
         jTextField2.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextField2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, new java.awt.Color(204, 51, 0)));
         jTextField2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        jTextField2.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                jTextField2FocusGained(evt);
+            }
+        });
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
+            }
+        });
+        jTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jTextField2KeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextField2KeyTyped(evt);
             }
         });
 
@@ -617,7 +629,7 @@ public class Calculator extends javax.swing.JFrame {
         jButton70.setBackground(new java.awt.Color(23, 23, 23));
         jButton70.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         jButton70.setForeground(new java.awt.Color(204, 204, 204));
-        jButton70.setText("Log");
+        jButton70.setText("log");
         jButton70.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
         jButton70.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton70.setFocusable(false);
@@ -671,85 +683,90 @@ public class Calculator extends javax.swing.JFrame {
                         .addGap(10, 10, 10)
                         .addComponent(jButton33, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(cientificaLayout.createSequentialGroup()
-                        .addGap(25, 25, 25)
+                        .addGap(23, 23, 23)
                         .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(cientificaLayout.createSequentialGroup()
-                                .addGap(338, 338, 338)
+                                .addGap(340, 340, 340)
                                 .addComponent(jButton50, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel8)
-                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(cientificaLayout.createSequentialGroup()
-                                .addGap(90, 90, 90)
+                                .addGap(2, 2, 2)
+                                .addComponent(jLabel8))
+                            .addGroup(cientificaLayout.createSequentialGroup()
+                                .addGap(2, 2, 2)
+                                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(cientificaLayout.createSequentialGroup()
+                                .addGap(92, 92, 92)
                                 .addComponent(jLabel9))
-                            .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(cientificaLayout.createSequentialGroup()
-                                    .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jButton69, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jButton70, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jButton61, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jButton64, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jButton67, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(cientificaLayout.createSequentialGroup()
-                                            .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(cientificaLayout.createSequentialGroup()
-                                                    .addComponent(jButton44, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addGap(5, 5, 5)
-                                                    .addComponent(jButton41, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGap(5, 5, 5)
-                                            .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jButton43, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGap(5, 5, 5)
-                                            .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cientificaLayout.createSequentialGroup()
-                                            .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jButton47, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jButton46, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jButton45, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGap(5, 5, 5)
-                                            .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jButton38, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jButton39, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jButton40, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGap(5, 5, 5)
-                                            .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jButton36, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jButton37, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGap(5, 5, 5)
-                                            .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jButton35, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, cientificaLayout.createSequentialGroup()
-                                    .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(cientificaLayout.createSequentialGroup()
-                                            .addComponent(jButton55, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jButton54, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(cientificaLayout.createSequentialGroup()
-                                            .addComponent(jRadioButton2)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                            .addComponent(jRadioButton1)))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cientificaLayout.createSequentialGroup()
-                                            .addGap(0, 0, Short.MAX_VALUE)
-                                            .addComponent(jButton49, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(cientificaLayout.createSequentialGroup()
-                                            .addComponent(jButton53, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jButton52, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jButton51, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(jButton48, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))))))
+                            .addGroup(cientificaLayout.createSequentialGroup()
+                                .addGap(2, 2, 2)
+                                .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(cientificaLayout.createSequentialGroup()
+                                        .addComponent(jButton55, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton54, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(cientificaLayout.createSequentialGroup()
+                                        .addComponent(jRadioButton2)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jRadioButton1)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cientificaLayout.createSequentialGroup()
+                                        .addGap(212, 212, 212)
+                                        .addComponent(jButton49, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(cientificaLayout.createSequentialGroup()
+                                        .addComponent(jButton53, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton52, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton51, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(jButton48, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cientificaLayout.createSequentialGroup()
+                                .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jButton69, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jButton70, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jButton61, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jButton64, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jButton67, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(cientificaLayout.createSequentialGroup()
+                                        .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(cientificaLayout.createSequentialGroup()
+                                                .addComponent(jButton44, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addGap(5, 5, 5)
+                                                .addComponent(jButton41, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(5, 5, 5)
+                                        .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButton43, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(5, 5, 5)
+                                        .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, cientificaLayout.createSequentialGroup()
+                                        .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jButton47, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButton46, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButton45, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(5, 5, 5)
+                                        .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jButton38, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButton39, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButton40, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(5, 5, 5)
+                                        .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jButton36, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButton37, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(5, 5, 5)
+                                        .addGroup(cientificaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(jButton35, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(6, 6, 6)))))
                 .addContainerGap(17, Short.MAX_VALUE))
         );
         cientificaLayout.setVerticalGroup(
@@ -1567,11 +1584,17 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton65ActionPerformed
 
     private void jButton66ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton66ActionPerformed
-        // TODO add your handling code here:
+        jButton1.setBackground(new Color(255, 102, 51));
+        jButton22.setBackground(new Color(255, 102, 51));
+        jTextField1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, new java.awt.Color(255, 102, 51)));
+        jTextField2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, new java.awt.Color(255, 102, 51)));
     }//GEN-LAST:event_jButton66ActionPerformed
 
     private void jButton68ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton68ActionPerformed
-        // TODO add your handling code here:
+       jButton1.setBackground(new Color(0, 153, 153));
+        jButton22.setBackground(new Color(0, 153, 153));
+        jTextField1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, new java.awt.Color(0, 153, 153)));
+        jTextField2.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 0, 0, 0, new java.awt.Color(0, 153, 153)));
     }//GEN-LAST:event_jButton68ActionPerformed
 
     private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
@@ -1634,35 +1657,7 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton20ActionPerformed
 
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-    //    this.extValores( jButton1.getText() );
-        
-        //System.out.println( this.valor1 + " " + this.valor2 + " " + this.operacion );
-        
-        // decidir que operacion realizar segun la propiedad operacion
-        switch(operacion){
-            /* funcion de suma */ 
-            case "+" :
-                funSum();
-            break;
-            
-            /* funcion de resta */ 
-            case "-" :
-                funRes();
-            break;
-            
-            /* funcion de multiplicacion */ 
-            case "x" :
-                funMul();
-            break;
-                
-            case "^" :
-                potencia();    // Llamada del método potencia
-            break; 
-        }
-        
-        // desplegar Resultado en la pantalla 
-       JTextField txtGen = this.verPantalla();
-       txtGen.setText( String.valueOf(this.resultado) );
+   
     }//GEN-LAST:event_jButton22ActionPerformed
 
     public void funSum(){
@@ -1696,20 +1691,65 @@ public class Calculator extends javax.swing.JFrame {
          conPantalla(jButton41);
     }//GEN-LAST:event_jButton41ActionPerformed
 
-    private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton49ActionPerformed
-
     private void jButton50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton50ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton50ActionPerformed
 
     private void jButton51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton51ActionPerformed
-      
+            
+        DecimalFormat objFormato=new DecimalFormat("#.#########");
+        double valor1 = Double.parseDouble(jTextField2.getText());
+        
+        
+        if(variable == 0)
+        {
+           if(valor1 == 90 || valor1 == -90)   //Restriccion en 90 y -90. Causa indeterminacion.
+           {
+               jTextField2.setText("Math Err");
+           }
+           else
+           {
+            //System.out.println("El resultado es: "+  1/Math.cos( Math.toRadians(valor1))); Comprobar resultado
+            double resultado = 1/Math.cos( Math.toRadians(valor1));
+            jTextField2.setText(objFormato.format(resultado));
+           }
+        }
+        else if(variable == 1)
+        {
+            //System.out.println("El resultado es: "+ 1/Math.cos(valor1)); Comprobar reultado
+            double resultado = 1/Math.cos(valor1);
+            jTextField2.setText(objFormato.format(resultado));
+        }
+
     }//GEN-LAST:event_jButton51ActionPerformed
 
     private void jButton48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton48ActionPerformed
+
+         DecimalFormat objFormato=new DecimalFormat("#.#########");
+        double valor1 = Double.parseDouble(jTextField2.getText());
         
+        
+        if(valor1 == 0)   //Restriccion en 0. Causa indeterminacion.
+        {
+            jTextField2.setText("Math Err");
+        }
+        else
+        {
+        if(variable == 0)
+        {
+           
+            //System.out.println("El resultado es: "+  1/Math.sin( Math.toRadians(valor1))); Comprobar resultado
+            double resultado = 1/Math.sin( Math.toRadians(valor1));
+            jTextField2.setText(objFormato.format(resultado));
+        }
+        else if(variable == 1)
+        {
+            //System.out.println("El resultado es: "+ 1/Math.sin(valor1)); Comprobar reultado
+            double resultado = 1/Math.sin(valor1);
+            jTextField2.setText(objFormato.format(resultado));
+        }
+        }
+
     }//GEN-LAST:event_jButton48ActionPerformed
 
     private void jButton47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton47ActionPerformed
@@ -1917,10 +1957,27 @@ public class Calculator extends javax.swing.JFrame {
 
     private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
         // TODO add your handling code here:
+        DecimalFormat objFormato=new DecimalFormat("#.#########");
+        double valor1 = Double.parseDouble(jTextField2.getText());
+         if(variable == 1)
+        {
+           
+            //System.out.println("El resultado es: "+  Math.tan( Math.toRadians(valor1))); Comprobar resultado
+            double resultado = Math.tan( Math.toRadians(valor1));
+            jTextField2.setText(objFormato.format(resultado));
+        }
+        else
+        {
+           // System.out.println("El resultado es: "+ Math.tan(valor1)); Comprobar resultado
+            double resultado = Math.tan(valor1);
+            jTextField2.setText(objFormato.format(resultado));
+        }
+
     }//GEN-LAST:event_jButton53ActionPerformed
 
     private void jRadioButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton1ActionPerformed
         // TODO add your handling code here:
+        variable = 1;
     }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
@@ -1933,11 +1990,45 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField1KeyPressed
 
     private void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
-        // TODO add your handling code here:
         char n = evt.getKeyChar();
         if(n<'0' || n>'9')
+            if(n != '.')
+                if(n != '-')
+                    if(n != '+')
+                        if(n != '*')
+                            if(n != '/')
+                                if(n != '(')
+                                    if(n != ')')
         evt.consume();
     }//GEN-LAST:event_jTextField1KeyTyped
+
+    private void jTextField2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyTyped
+            char n = evt.getKeyChar();
+            if(n<'0' || n>'9')
+                if(n != '.')
+                    if(n != '-')
+                        if(n != '+')
+                            if(n != '*')
+                                if(n != '/')
+                                    if(n != '^')
+                                        if(n != 'e')
+                                            if(n != '%')
+                                                if(n != '(')
+                                                    if(n != ')')
+            evt.consume();      
+    }//GEN-LAST:event_jTextField2KeyTyped
+
+    private void jButton49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton49ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton49ActionPerformed
+
+    private void jTextField2FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jTextField2FocusGained
+
+    }//GEN-LAST:event_jTextField2FocusGained
+
+    private void jTextField2KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField2KeyPressed
+
+    }//GEN-LAST:event_jTextField2KeyPressed
     
     private void raiz(){
         DecimalFormat objFormato = new DecimalFormat("#.#########");        
