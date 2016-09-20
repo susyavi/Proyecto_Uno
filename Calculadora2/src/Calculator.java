@@ -1504,8 +1504,23 @@ public class Calculator extends javax.swing.JFrame {
         
         // decidir que operacion realizar segun la propiedad operacion
         switch(operacion){
-            case "+" : /* funcion de suma */
-            case "^":
+
+            /* funcion de suma */ 
+            case "+" :
+                funSum();
+            break;
+            
+            /* funcion de resta */ 
+            case "-" :
+                funRes();
+            break;
+            
+            /* funcion de multiplicacion */ 
+            case "x" :
+                funMul();
+            break;
+            
+            case "^" :
                 potencia();     // Uso de la funcion para calcular x elevado a una potencia y
             break; 
         }
@@ -1678,24 +1693,6 @@ public class Calculator extends javax.swing.JFrame {
     private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
    
     }//GEN-LAST:event_jButton22ActionPerformed
-
-    public void funSum(){
-        double a = this.valor1;
-        double b = this.valor2;
-        this.resultado=a+b;
-    }
-    
-    public void funRes(){
-        double a = this.valor1;
-        double b = this.valor2;
-        this.resultado=a-b;
-    }
-    
-    public void funMul(){
-        double a = this.valor1;
-        double b = this.valor2;
-        this.resultado=a*b;
-    }
     
     private void jButton36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton36ActionPerformed
         // TODO add your handling code here:
@@ -1976,6 +1973,28 @@ public class Calculator extends javax.swing.JFrame {
         this.operacion = jButton67.getText();
         borrarPantalla();
     }//GEN-LAST:event_jButton67ActionPerformed
+
+    /* Funcion para calcular la suma */
+    public void funSum(){
+        double a = this.valor1;
+        double b = this.valor2;
+        this.resultado=a+b;
+    }
+    
+    /* Funcion para calcular la resta */
+    public void funRes(){
+        double a = this.valor1;
+        double b = this.valor2;
+        this.resultado=a-b;
+    }
+    
+    /* Funcion para calcular la multiplicacion */
+    public void funMul(){
+        double a = this.valor1;
+        double b = this.valor2;
+        this.resultado=a*b;
+    }
+
 // METODO PARA CALCULAR UN NUMERO x ELEVADO A UNA POTENCIA y
     private void potencia(){
         DecimalFormat objFormato = new DecimalFormat("#.#########");
