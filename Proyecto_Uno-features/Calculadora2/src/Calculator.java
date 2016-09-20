@@ -1754,8 +1754,7 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        // TODO add your handling code here:
-        this.extValores(jButton17.getText() );
+        Modulo();
     }//GEN-LAST:event_jButton17ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
@@ -2099,7 +2098,7 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton55ActionPerformed
 
     private void jButton61ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton61ActionPerformed
-        // TODO add your handling code here:
+        Modulo();
     }//GEN-LAST:event_jButton61ActionPerformed
 
     private void jButton64ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton64ActionPerformed
@@ -2189,7 +2188,7 @@ public class Calculator extends javax.swing.JFrame {
     }
 
     private void jButton70ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton70ActionPerformed
-        // TODO add your handling code here:
+        Log();
     }//GEN-LAST:event_jButton70ActionPerformed
 
     private void jButton53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton53ActionPerformed
@@ -2218,7 +2217,7 @@ public class Calculator extends javax.swing.JFrame {
     }//GEN-LAST:event_jRadioButton1ActionPerformed
 
     private void jRadioButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton2ActionPerformed
-        // TODO add your handling code here:
+        variable = 0;
     }//GEN-LAST:event_jRadioButton2ActionPerformed
 
     private void jTextField1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyPressed
@@ -2474,6 +2473,33 @@ public class Calculator extends javax.swing.JFrame {
         
         
         
+    }
+    
+    public void Modulo(){
+        
+        try{
+            if(valor2==0){
+                jTextField2.setText("Error");
+            }
+            else
+                resultado = valor1%valor2 ;
+        }
+        catch(Exception e){}
+    }
+    
+    public void Log(){
+        try{
+            if(variable == 2){
+                
+                resultado = Math.log(valor1);
+                
+                if(variable == 1)
+                { resultado = Math.log( Math.toRadians(valor1)); }
+                
+                else{ resultado = Math.log(valor1); }
+            }
+        }
+        catch(Exception e){}
     }
     
     public static void main(String args[]) {
