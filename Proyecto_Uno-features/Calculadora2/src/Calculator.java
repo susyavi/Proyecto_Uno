@@ -325,10 +325,12 @@ public class Calculator extends javax.swing.JFrame {
             }
         });
 
-        jButton38.setBackground(new java.awt.Color(204, 204, 255));
+        jButton38.setBackground(new java.awt.Color(204, 204, 204));
         jButton38.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        jButton38.setForeground(new java.awt.Color(204, 204, 204));
         jButton38.setText("e");
         jButton38.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
+        jButton38.setContentAreaFilled(false);
         jButton38.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton38.setFocusable(false);
         jButton38.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -694,10 +696,12 @@ public class Calculator extends javax.swing.JFrame {
             }
         });
 
-        jButton56.setBackground(new java.awt.Color(204, 204, 255));
+        jButton56.setBackground(new java.awt.Color(204, 204, 204));
         jButton56.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        jButton56.setForeground(new java.awt.Color(204, 204, 204));
         jButton56.setText("Pi");
         jButton56.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(102, 102, 102)));
+        jButton56.setContentAreaFilled(false);
         jButton56.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jButton56.setFocusable(false);
         jButton56.addActionListener(new java.awt.event.ActionListener() {
@@ -780,7 +784,7 @@ public class Calculator extends javax.swing.JFrame {
                                             .addComponent(jButton39, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(jButton40, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addGroup(cientificaLayout.createSequentialGroup()
-                                                .addComponent(jButton38, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jButton38, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(jButton56, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
